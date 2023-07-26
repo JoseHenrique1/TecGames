@@ -1,0 +1,141 @@
+/*nivel 0*/
+
+.center-caixa-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*nivel 1*/
+
+
+.caixa-horizontal {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    border-radius: 10px;
+    width: 98%;
+}
+/**/
+
+
+
+/*nivel 2*/
+.caixas {
+    font-size: 20px;
+
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: gray;
+}
+/*div dos botoes*/
+.leftright {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4px 0px;
+}
+
+/**/
+
+
+
+/*nivel 3*/
+
+.caixa{
+    font-size: 1em;
+
+   text-decoration: none;
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    min-height: 300px;
+    margin: 10px 0px;
+    flex-grow: 1;
+}
+
+.caixa-oculta {
+    display: none;
+}
+
+
+.caixa-btn {
+    background-color: cornflowerblue;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: flex;
+    min-width: 100px;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 5px 8px;
+  
+    font-size: 20px;
+    color: white;
+  
+    transition: 1s 0s;
+  
+  }
+  
+  .caixa-btn-esquerda:hover :first-of-type {
+    animation-name: btn-icon;
+    animation-duration: 1s;
+  }
+
+  .caixa-btn-direita:hover :last-of-type {
+    animation-name: btn-icon;
+    animation-duration: 1s;
+  }
+  
+  @keyframes btn-icon {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(40deg) scale(1.1);}
+    75%  {transform: rotate(-40deg) scale(1.1);}
+    100% {transform: rotate(0deg);}
+  }
+
+/*nivel 4*/
+
+
+.sub-caixa {
+    width: 90%;
+    min-height: 90%;
+    background-color:cornflowerblue;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.sub-caixa p {
+    color: white;
+}
+
+.sub-caixa h1 {
+    color: black;
+}
+
+
+
+
+@media ((min-width: 576px) and (max-width: 990px)) {
+    .caixa {
+        font-size: 1.4em;
+        min-height: 450px;
+    }
+
+    
+}
+
+@media (max-width: 575px) {
+    .caixa {
+        
+        font-size: 1.15em;
+        min-height: 350px;
+    }
+
+    
+}

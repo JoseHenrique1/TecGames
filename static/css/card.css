@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+.card {
+  display: flex;
+  min-width: 45%;
+  max-width: 607px;
+  height: auto;
+  background-color: #1a191e;
+  /* ou transparente... Fica massa*/
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+  /* border-radius: 20px; */
+
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 70vh;
+  height: auto;
+  background-color: #1a191e;
+  text-align: left;
+  /* border-radius: 20px; */
+}
+
+.card-content {
+  /* border-radius: 20px; */
+    display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  max-height: 100%;
+  min-height: 50%;
+  padding: 10px;
+  margin: 0px 10px;
+  background-color: #1a191e;
+  color: #d7d7d7;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-content h1 {
+  margin-bottom: 5px;
+  padding: 0px;
+}
+
+.card-content p {
+  font-size: 1.4rem;
+}
+
+
+.card-img {
+
+  display: block;
+  margin-bottom: 10px;
+  
+
+  max-height: 310px;
+  min-height: 50vh;
+  max-width: 100%;
+  box-shadow: 3px 3px 3px black;
+  transition: 1s 0s;
+}
+
+.card-img:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+
+
+
+.card-buttons {
+  
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+
+
+.card-btn-download {
+  cursor: pointer;
+  background-color: green;
+  border: 5px solid white;
+  border-radius: 10px;
+  display: flex;
+  min-width: 100px;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 8px;
+
+  font-size: 20px;
+  color: white;
+
+  transition: 1s 0s;
+
+}
+
+.card-btn-download a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-btn-download:hover :first-of-type {
+  animation-name: btn-icon;
+  animation-duration: 1s;
+}
+
+@keyframes btn-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(40deg) scale(1.1);
+  }
+
+  75% {
+    transform: rotate(-40deg) scale(1.1);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+.card-btn-site {
+  cursor: pointer;
+  background-color: orangered;
+  border: 5px solid white;
+  border-radius: 10px;
+  display: flex;
+  min-width: 100px;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 8px;
+
+  font-size: 20px;
+  color: white;
+}
+
+.card-btn-site a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-btn-site:hover :first-of-type {
+  animation-name: btn-icon;
+  animation-duration: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+  CELULAR ABIXO
+
+*/
+@media (max-width: 575px) {
+
+  .card {
+    display: flex;
+    width: 90%;
+    height: auto;
+    background-color: #1a191e;
+    /* ou transparente... Fica massa*/
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 30px;
+
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #1a191e;
+    text-align: left;
+  }
+
+  .card-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    max-height: 100%;
+    min-height: 50%;
+    padding: 10px;
+    margin: 0px 10px;
+    background-color: #1a191e;
+  }
+
+  .card-content h1 {
+    margin-bottom: 5px;
+    padding: 0px;
+  }
+
+  .card-img {
+    min-height: auto;
+    margin-bottom: 10px;
+    max-height: 310px;
+    max-width: 100%;
+    box-shadow: 3px 3px 3px black;
+    transition: 1s 0s;
+    transition: 1s 0s;
+  }
+
+  .card-img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+
+
+
+}
+
+
+
+
+
+/*
+
+            TABLET ABAIXO
+
+*/
+
+@media ((min-width:576px) and (max-width: 990px)) {
+
+
+
+  .card {
+    display: flex;
+    min-width: 45%;
+    max-width: 90%;
+    height: auto;
+    background-color: #1a191e;
+    /* ou transparente... Fica massa*/
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #1a191e;
+    text-align: left;
+
+
+  }
+
+  .card-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    max-height: 100%;
+    min-height: 50%;
+    padding: 10px;
+    margin: 0px 10px;
+    background-color: #1a191e;
+    font-size: 35px;
+  }
+
+  .card-content h1 {
+    margin-bottom: 5px;
+    font-size: 40px;
+    padding: 0px;
+  }
+
+
+
+  .card-img {
+
+    display: block;
+    margin-bottom: 10px;
+    
+  
+    max-height: 310px;
+    min-height: 40vh;
+    max-width: 100%;
+    box-shadow: 3px 3px 3px black;
+    transition: 1s 0s;
+  }
+
+  .card-img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+
+
+
+
+  .card-btn-site {
+    font-size: 45px;
+  }
+
+  .card-btn-download {
+    font-size: 45px;
+  }
+
+}

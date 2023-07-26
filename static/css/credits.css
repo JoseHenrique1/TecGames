@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+.main-credits {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0px;
+    padding-top: 22vh;
+    margin: 0px;
+}
+
+.main-credits h1{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 30px ;
+    text-decoration: underline 3px solid darkblue;
+    font-size: 40px;
+  
+}
+
+.main-credits p{
+    padding: 0px 30px;
+    font-size: 1.5rem;
+    padding-left: 50px;
+}
+
+.lista{
+    padding: 30px;
+    font-size: 1.5rem;
+    padding-left: 80px;
+}
+
+.desenvolvedores {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+.section-dev {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 20px;
+    min-width: 300px;
+    max-width: 600px;
+
+}
+.dev {
+    padding: 10px;
+    width: 80%;
+    background-color: #1a191e;
+}
+
+.h-entrelinhas {
+    color: white;
+    text-shadow: 0px -1px 1px black;
+
+}
+
+
+
+.dev-name {
+    
+    width: 100%;
+    height: 10vh;    
+}
+
+.dev-name h2 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.dev-name h5 {
+    color:#d7d7d7;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+
+.dev-foto {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    min-height: 480px;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+@media (max-width:990px) {
+    .dev-foto {
+        min-height: 100px;
+    }
+}
+
+.dev-foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: 1s 0s;
+    max-width: 400px;
+}
+.dev-foto img:hover {
+    opacity: 0.7;
+    
+}
+
+.dev-tecnologia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 7px 0px;
+}
+
+.dev-tecnologia i {
+    font-size: 20px;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    display: flex;
+    max-width: 150px;
+    margin-bottom: 2px;
+}
+
+.dev-tecnologia i p{
+    font-size: 1.0rem;
+    font-family: 'Roboto', sans-serif;
+    color: #d7d7d7;
+    text-shadow: none;
+    padding-left: 50px;
+}
+
+.dev-redesocial {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    height: 7vh;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.dev-redesocial i {
+    cursor: pointer;
+    font-size: 40px;
+    color: white;
+    transition: 1s 0s;
+    box-shadow: 2px 2px 10px black;
+    padding: 0px 4px;
+    border-radius: 50%;
+    
+}
+
+.dev-redesocial i:hover {
+    color:royalblue;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 1px black;
+    box-shadow: 2px 2px 8px lightblue;
+    background-image: linear-gradient(to bottom, white, lightskyblue);
+    background-image: none;
+    ;
+}
+
+
+@media ((min-width:576px) and (max-width: 990px))
+{
+    .main-credits h1{
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 0;
+        text-decoration: none;
+        padding-bottom: 30px;
+        font-size: 2.5rem;
+      
+    }
+
+}
+
+
+@media (max-width:575px)
+{
+    .main-credits h1{
+        text-align: center;
+        padding-top: 50px;
+        padding-left: 0;
+        text-decoration: none;
+        padding-bottom: 30px;
+        font-size: 2.5rem;
+      
+    }
+
+}
+

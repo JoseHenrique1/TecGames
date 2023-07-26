@@ -1,0 +1,156 @@
+/*LAYOUT DE FOTOS*/
+
+.box-explorar {
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+
+.copy-box-explorar-sub {
+    width: 350px;
+    height: auto;
+    margin-bottom: 35px;
+    
+}
+
+.box-explorar-sub {
+    width: 350px;
+    height: auto;
+    margin-bottom: 35px;
+    
+}
+@media ((min-width: 576px) and (max-width:990px)) {
+    .box-explorar-sub {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .box-explorar-sub {
+        margin-bottom: 10px;
+    }
+}
+/* -----------------------  */
+
+
+
+/*Modal*/
+.modal {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.381);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+
+    align-items: center;
+    justify-content: center;
+
+}
+.m-desativado {display: none;}
+
+
+.modal-conteudo {
+    
+    display: flex;
+    z-index: 10;
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+    opacity: 10;
+
+    max-width: 1000px;
+    max-height: 800px;
+}
+
+@media ((min-width: 576px) and (max-width:990px)) {
+    .modal-conteudo {
+        width: 90%;
+        height: 30%;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-conteudo {
+        width: 90%;
+        height: 25%;
+    }
+}
+
+
+
+.modal-conteudo video {
+    display: flex;
+    flex-grow: 1;
+    opacity: 1;
+}
+
+
+/* TOPICOS */
+
+.topicos {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+.topicos > h1 {
+    padding-left: 20px;
+}
+
+.topicos > h1::before {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: #3b57de;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#topico-principal a {
+    color: blue;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#topico-principal div {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+@media ((min-width: 576px) and (max-width:990px)) {
+    #topico-principal a {
+        font-size: 1.5em;
+    }
+
+    .topicos {
+        font-size: 20px;
+    }
+    
+}
+
+
+
+@media (max-width: 576px) {
+    #topico-principal div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #topico-principal a {
+        padding-left: 20px;
+    }
+
+    .topicos > h1::before {
+        
+        margin-top: 0px;
+    }
+}
+
